@@ -41,4 +41,30 @@ describe Solver do
       expect(@solver_reverse.reverse('hello')).to eq('olleh')
     end
   end
+
+  context 'Testing the class Solver, method fizzbuzz' do
+    before :each do
+      @solver_fizzbuzz = Solver.new
+    end
+
+    it '@solver_fizzbuzz should be an instance of the class Solver' do
+      expect(@solver_reverse).to be_instance_of Solver
+    end
+
+    it 'The method fizzbuzz should be available for the instance @solver' do
+      expect(@solver_reverse).to respond_to(:reverse)
+    end
+
+    it 'The method fizzbuzz shoud return fizz when N is divisible by 3' do
+      expect(@solver_fizzbuzz.fizzbuzz(9)).to eq('fizz')
+    end
+
+    it 'The method fizzbuzz shoud return buzz when N is divisible by 5' do
+      expect(@solver_fizzbuzz.fizzbuzz(10)).to eq('buzz')
+    end
+
+    it 'The method fizzbuzz shoud return fizzbuzz when N is divisible by 3 and 5' do
+      expect(@solver_fizzbuzz.fizzbuzz(30)).to eq('fizzbuzz')
+    end
+  end
 end
