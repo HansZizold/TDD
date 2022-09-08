@@ -14,9 +14,9 @@ describe Solver do
       expect(@solver).to respond_to(:factorial)
     end
 
-    it "The book's title should be Don Quijote de la Mancha" do
-      expect(@book.factorial(0)).to eq(1)
-      expect(@book.factorial(5)).to eq(120)
+    it 'The factorial of 0 shoud be 1 and the factorial of 5 should be 120' do
+      expect(@solver.factorial(0)).to eq(1)
+      expect(@solver.factorial(5)).to eq(120)
     end
   end
 end
