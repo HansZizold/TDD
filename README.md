@@ -3,7 +3,7 @@ TDD exercises
 
 # TEST DRIVEN DEVELOPMENT
 
-> This project will record what books are on the library and who bowwors them. The app will allow to add students, teachers, books and save records of who borrowed a given book and when
+> In this project, a class 'Solver' with three procedures (factorial, reverse string and fizzbuzz) are implemented under the Test Driven Development (TDD) methodology.
 
 ## Getting Started
 
