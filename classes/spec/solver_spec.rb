@@ -48,11 +48,11 @@ describe Solver do
     end
 
     it '@solver_fizzbuzz should be an instance of the class Solver' do
-      expect(@solver_reverse).to be_instance_of Solver
+      expect(@solver_fizzbuzz).to be_instance_of Solver
     end
 
     it 'The method fizzbuzz should be available for the instance @solver' do
-      expect(@solver_reverse).to respond_to(:reverse)
+      expect(@solver_fizzbuzz).to respond_to(:fizzbuzz)
     end
 
     it 'The method fizzbuzz shoud return fizz when N is divisible by 3' do
@@ -65,6 +65,10 @@ describe Solver do
 
     it 'The method fizzbuzz shoud return fizzbuzz when N is divisible by 3 and 5' do
       expect(@solver_fizzbuzz.fizzbuzz(30)).to eq('fizzbuzz')
+    end
+
+    it 'The method fizzbuzz shoud return N when it is not divisible by 3 and 5' do
+      expect(@solver_fizzbuzz.fizzbuzz(17)).to eq('17')
     end
   end
 end
