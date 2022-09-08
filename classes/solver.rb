@@ -1,6 +1,7 @@
 class Solver
   def initialize
     @factorial = 1
+    @string = ''
   end
 
   def factorial(number)
@@ -8,5 +9,9 @@ class Solver
     return 1 if number.zero?
 
     number * factorial(number - 1)
+  end
+
+  def reverse(string)
+    string.reverse
   end
 end
