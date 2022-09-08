@@ -1,25 +1,22 @@
 require_relative '../solver'
 
-describe Book do
-  context 'Testing the class Book' do
+describe Solver do
+  context 'Testing the class Solver' do
     before :each do
-      @book = Book.new('Don Quijote de la Mancha', 'Miguel de Cervantes')
+      @solver = Solver.new
     end
 
-    it '@book should be an instance of the class Book' do
-      expect(@book).to be_instance_of Book
+    it '@solver should be an instance of the class Solver' do
+      expect(@solver).to be_instance_of Solver
+    end
+
+    it 'The method factorial should be available for the instance @solver' do
+      expect(@solver).to respond_to(:factorial)
     end
 
     it "The book's title should be Don Quijote de la Mancha" do
-      expect(@book.title).to eq('Don Quijote de la Mancha')
-    end
-
-    it "The book's author should be Miguel de Cervantes" do
-      expect(@book.author).to eq('Miguel de Cervantes')
-    end
-
-    it 'The method add_rental should be available for the instance @book' do
-      expect(@book).to respond_to(:add_rental)
+      expect(@book.factorial(0)).to eq(1)
+      expect(@book.factorial(5)).to eq(120)
     end
   end
 end
