@@ -8,7 +8,7 @@ TDD exercises
 ## Getting Started
 
 - To run this project, you need to install Ruby and run ```ruby main.rb```.
-- To run the tests, you need to install rspec for Ruby and run ```rspec spec```.
+- To run the tests, you need to install rspec for Ruby and run ```rspec ./classes/spec```.
 
 ## Authors
 
